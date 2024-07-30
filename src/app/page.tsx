@@ -1,6 +1,11 @@
 import { getCatalog } from "@/requests/pizza/catalog/getCatalog";
 import { PizzaCard } from "./components/PizzaCard";
 
+export const metadata = {
+  title: "Каталог",
+  description: "Каталог пицц",
+};
+
 const CatalogPage = async () => {
   const { catalog } = await getCatalog();
   return (
