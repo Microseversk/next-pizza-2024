@@ -15,7 +15,7 @@ export const PizzaCard = ({ pizza }: PizzaCardProps) => {
         width={333}
         height={333}
       />
-      <strong className="font-semibold text-lg">{pizza.name}</strong>
+      <strong className=" font-semibold text-lg">{pizza.name}</strong>
       <p className="opacity-80">{pizza.description}</p>
       <strong className="font-semibold text-lg">cost</strong>
       <button className="w-full bg-orange-600 rounded-xl py-4 text-white font-semibold hover:bg-orange-700 transition-colors">
