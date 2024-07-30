@@ -1,6 +1,10 @@
-import { PizzasResponse } from "src/app/@types/types";
+import { PizzasResponse } from "src/@types/types";
 
 export const getCatalog = async (): Promise<PizzasResponse> => {
-  const response = await fetch(`${process.env.BASE_URL}/pizza/catalog`);
+  const response = await fetch(`${process.env.BASE_URL}/pizza/catalog`, {
+    next: {
+      tags: ["catalog"],
+    },
+  });
   return response.json();
 };

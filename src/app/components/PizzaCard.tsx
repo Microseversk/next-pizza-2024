@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Pizza } from "../@types/types";
+import { Pizza } from "../../@types/types";
 
 interface PizzaCardProps {
   pizza: Pizza;
